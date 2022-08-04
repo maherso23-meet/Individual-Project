@@ -46,7 +46,7 @@ def signup():
             login_session['user'] = auth.create_user_with_email_and_password(email, password)
             users = {"email" : request.form['email'], "password" : request.form['password'], "name" : request.form['name'], "username" : request.form['username'], "bio" : request.form['bio']}
             db.child("users").child(login_session['user']['localId']).set(users)
-            return redirect(url_for('signin'))
+            return redirect(url_for('home'))
         except:
             error = "Authentication failed"
 

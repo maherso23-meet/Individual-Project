@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Signin</title>
+    <link rel = "stylesheet" href = "static/style.css">
 </head>
 <body>
-    <form method="POST" action="/">
+    <form class="mid" method="POST" action="/">
         <!-- Heading -->
-        <h4>
+        <h4 >
         Log in to your account
         </h4>
 
@@ -20,9 +21,10 @@
         <div>
             <label>Email address*</label>
             <div>
-                <input type="email"  name="email" id="emailStr" required>
+                <input type="email"  name="email" id="emailStr" >
             </div>
         </div>
+          <br>
 
         <!-- Password -->
         <div>
@@ -34,10 +36,14 @@
         
         <!-- Button -->
         <div>
+          <br>
             <input type="submit"/>
         </div>
+        <br>
     </form>
+
     <br>
-    <a href="/signup"><button>signup</button></a>
+    
+       <h3>Dont have an account? <a href="/signup"><button>signup</button></a></h3>
 </body>
 </html>
